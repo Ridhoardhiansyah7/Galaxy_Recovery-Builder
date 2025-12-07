@@ -14,23 +14,23 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/Galaxy-MT6768/android_device_samsung_a31nsxx'
+        default: 'https://github.com/Ridhoardhiansyah7/android_device_samsung_a3core'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'android-12'
+        default: 'crypto'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/samsung/a31'
+        default: 'device/samsung/a3core'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'a31'
+        default: 'a3core'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_a31'
+        default: 'twrp_a3core'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
