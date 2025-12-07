@@ -45,6 +45,8 @@ on:
 jobs:
   Build:
     if: github.event.repository.owner.id == github.event.sender.id
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     # You can use either of the ubuntu-18.04 or ubuntu-20.04 runner
     steps:
