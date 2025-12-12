@@ -128,6 +128,12 @@ jobs:
         repo sync -j$(nproc --all) --force-sync
       working-directory: workspace
 
+    - name: Apply graphics_drm patch
+      run: |
+        # Lokasi graphics_drm.cpp di TWRP 11
+        cp ${{ github.workspace }}/patches/graphics_drm.cpp \
+        ${{ github.workspace }}/workspace/bootable/recovery/minuitwrp/graphics_drm.cpp
+
     - name: Make it Clean
       run: |
         source build/envsetup.sh
